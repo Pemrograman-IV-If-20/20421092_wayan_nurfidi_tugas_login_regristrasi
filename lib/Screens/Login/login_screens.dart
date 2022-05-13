@@ -1,0 +1,23 @@
+
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:toko_gitar_wayannurfidi/Components/Login/LoginComponents.dart';
+import 'package:toko_gitar_wayannurfidi/size_config.dart';
+
+class login_screens extends StatelessWidget {
+
+static String routeName = "/sign_in";
+
+@override
+Widget build(BuildContext context){
+  SizeConfig().init(context);
+
+  return Scaffold(
+    appBar: AppBar(
+      automaticallyImplyLeading: false,
+    ),
+    body:LoginComponents (),
+  ) ;
+ }
+}
